@@ -12,6 +12,7 @@ int main() {
     	cout << "\nSelect an option: " << endl;
     	cout << "1. Do not want to assign need of ingredients to each chef: " << endl;
     	cout << "2. Assign need of ingredients to each chef: " << endl;
+	cout << "3. Exit" << endl;
     	cin >> op;
 		
     	switch(op) {
@@ -32,6 +33,8 @@ int main() {
         		cout << "Total number of ingredients that should be present in the kitchen in order";
     			cout << "\nto have a deadlock free execution of work is => "<<min_ingred<<endl;
         		break;
+		case 3:
+        		exit(0);
 				
       		default:
         		cout << "Invalid input" << endl;
