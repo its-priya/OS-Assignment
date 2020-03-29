@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n, r;
+    cout << "Enter total number of Chefs (N): ";
+    cin >> n; 
+    cout << "Enter maximum number of ingredients each chef can claim (R): ";
+    cin >> r;
+    cout << "Total number of ingredients that should be present in the kitchen in order";
+    cout << "\nto have a deadlock free execution of work is => " <<  (n*(r-1) + 1) << endl;
+  return 0;
+}
