@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+int ingred(int n, int r)
+{
+    int min_ingred = n*(r-1) + 1;
+	return min_ingred;
+}
 int main() {
     int n, r;
     cout << "Enter total number of Chefs (N): ";
@@ -8,6 +12,6 @@ int main() {
     cout << "Enter maximum number of ingredients each chef can claim (R): ";
     cin >> r;
     cout << "Total number of ingredients that should be present in the kitchen in order";
-    cout << "\nto have a deadlock free execution of work is => " <<  (n*(r-1) + 1) << endl;
+    cout << "\nto have a deadlock free execution of work is => " <<  ingred(n, r) << endl;
   return 0;
 }
